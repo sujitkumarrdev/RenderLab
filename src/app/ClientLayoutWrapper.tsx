@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect } from "react";
-import Lenis from "@studio-freight/lenis";
+import Lenis from "lenis";
 import Navbar from "./Components/ui/Navbar";
 
 export default function ClientLayoutWrapper({ children }: { children: React.ReactNode }) {
   useEffect(() => {
-    const lenis = new Lenis({ smooth: true, lerp: 0.1 });
+    const lenis = new Lenis();
 
     function raf(time: number) {
       lenis.raf(time);

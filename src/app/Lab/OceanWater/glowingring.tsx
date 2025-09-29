@@ -6,7 +6,7 @@ export default function Glowingring() {
     const meshref = useRef<THREE.Mesh>(null);
 
   return (
-    <mesh ref={meshref} position={[0, 9, +5]}>
+    <mesh ref={meshref} position={[0, 9, 5]}>
       <torusGeometry args={[12, 0.15, 32, 200]} />
       <meshStandardMaterial 
       emissive="#ffffff"
