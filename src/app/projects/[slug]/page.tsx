@@ -2,13 +2,16 @@ import { notFound } from "next/navigation";
 import { projects } from "@/app/Lib/projectData";
 import Back_Code_Buttons from "@/app/Components/ui/Buttons";
 
-interface Props {
-  params: { slug: string };
-}
+type PageProps = {
+  params: {
+    slug: string;
+  };
+};
 
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({ params }: PageProps) {
   const project = projects.find((p) => p.slug === params.slug);
   if (!project) return { title: "Not Found" };
+
   return {
     title: `${project.title} | RenderLab`,
     description: project.description,
@@ -20,9 +23,10 @@ export async function generateMetadata({ params }: Props) {
   };
 }
 
-export default async function ProjectPage({ params }: Props) {
+export default async function ProjectPage({ params }: PageProps) {
   const project = projects.find((p) => p.slug === params.slug);
   if (!project) return notFound();
+
   const Component = project.component;
 
   return (
