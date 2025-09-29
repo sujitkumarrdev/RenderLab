@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+   scroll-behavior: auto
+
+}
+body {
+    font-family: 'Melodrama', serif;
+    color: #cacaca;
+    background-color: #0F0F0F;
+}
+
+.hero-title, .hero-sub {
+  opacity: 0;
+  transform: translateY(20px);
+}
