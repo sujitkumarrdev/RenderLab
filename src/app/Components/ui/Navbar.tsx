@@ -18,7 +18,7 @@ export default function Navbar() {
         href="/"
         className="nav-logo text-[16px] lg:text-xl font-semibold tracking-tight cursor-pointer bg-gradient-to-r from-[#00C3FF] to-[#7A00FF] bg-clip-text text-transparent"
       >
-        RENDER<span className="text-gray-300">LAB</span>
+        RENDER-LAB
       </Link>
     </nav>
   );

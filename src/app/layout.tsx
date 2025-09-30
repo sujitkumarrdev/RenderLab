@@ -61,9 +61,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative w-full min-h-screen bg-black text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative w-full min-h-screen`}
       >
-        {/* client-side wrapper for smooth scroll */}
         <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
       </body>
     </html>

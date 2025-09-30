@@ -7,7 +7,8 @@
 html, body {
   margin: 0;
   padding: 0;
-   scroll-behavior: auto
+  scroll-behavior: auto;
+  overflow-x: hidden;
 
 }
 body {

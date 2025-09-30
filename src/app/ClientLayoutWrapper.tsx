@@ -3,6 +3,8 @@
 import { useEffect } from "react";
 import Lenis from "lenis";
 import Navbar from "./Components/ui/Navbar";
+import Footer from "./Components/ui/Footer";
+
 
 export default function ClientLayoutWrapper({ children }: { children: React.ReactNode }) {
   useEffect(() => {
@@ -26,6 +28,7 @@ export default function ClientLayoutWrapper({ children }: { children: React.Reac
       <div id="smooth-wrapper">
         <div id="smooth-content">{children}</div>
       </div>
+      <Footer/>
     </>
   );
 }

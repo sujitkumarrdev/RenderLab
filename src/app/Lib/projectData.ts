@@ -16,7 +16,7 @@ export const projects: Project[] = [
     slug: "water-ocean",
     description: "A realistic water ocean shader rendered in R3F.",
     preview: "/previews/Water-Ocean.png",
-    github: "https://github.com/sujitkumarrdev/water-ocean",
+    github: "https://github.com/sujitkumarrdev/RenderLab/tree/main/src/app/Lab/OceanWater",
     component: WaterOcean,
   },
 ];
