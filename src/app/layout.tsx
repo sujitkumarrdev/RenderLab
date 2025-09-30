@@ -15,6 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://labshader.vercel.app"),
+  
   title: "RenderLab - GLSL & React Three Fiber Shader Gallery",
   description:
     "RenderLab is a curated gallery of shaders and interactive visuals, built with GLSL, WebGL, and React Three Fiber. Explore live demos and source code on GitHub.",

@@ -6,11 +6,10 @@ import Navbar from "./Components/ui/Navbar";
 
 export default function ClientLayoutWrapper({ children }: { children: React.ReactNode }) {
   useEffect(() => {
-const lenis = new Lenis({
-  duration: 1.2,  
-  wheelMultiplier: 0.5,  git add .
-
-});
+    const lenis = new Lenis({
+      duration: 1.2,
+      wheelMultiplier: 0.5,
+    });
 
 
     function raf(time: number) {

@@ -2,14 +2,13 @@ import { notFound } from "next/navigation";
 import { projects } from "@/app/Lib/projectData";
 import Back_Code_Buttons from "@/app/Components/ui/Buttons";
 
-type PageProps = {
-  params: {
-    slug: string;
-  };
-};
+interface ProjectPageProps {
+  params: Promise<{ slug: string }>; // 👈 Yeh change karo
+}
 
-export async function generateMetadata({ params }: PageProps) {
-  const project = projects.find((p) => p.slug === params.slug);
+export async function generateMetadata({ params }: ProjectPageProps) {
+  const { slug } = await params; // 👈 await lagao
+  const project = projects.find((p) => p.slug === slug);
   if (!project) return { title: "Not Found" };
 
   return {
@@ -23,8 +22,9 @@ export async function generateMetadata({ params }: PageProps) {
   };
 }
 
-export default async function ProjectPage({ params }: PageProps) {
-  const project = projects.find((p) => p.slug === params.slug);
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { slug } = await params; // 👈 await lagao
+  const project = projects.find((p) => p.slug === slug);
   if (!project) return notFound();
 
   const Component = project.component;

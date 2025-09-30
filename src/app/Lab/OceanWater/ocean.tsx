@@ -8,7 +8,7 @@ export default function Ocean() {
   
   const ref = useRef<THREE.Group>(null);
   const waterRef = useRef<Water>(null);
-  const waterNormals = useLoader(THREE.TextureLoader, "/img/waternormals.jpg");
+  const waterNormals = useLoader(THREE.TextureLoader, "/waternormals.jpg");
 
 
   useEffect(() => {

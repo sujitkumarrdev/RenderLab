@@ -1,7 +1,7 @@
 import type { ComponentType } from "react";
 import WaterOcean from "../Lab/OceanWater/scene";
 
-export interface Project {
+ export interface Project {
   title: string;
   slug: string;
   description: string;
