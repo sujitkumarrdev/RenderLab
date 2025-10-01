@@ -1,5 +1,6 @@
 import type { ComponentType } from "react";
 import WaterOcean from "../Lab/OceanWater/scene";
+import SpectralCore from "../Lab/SpectralCore/Scene"
 
  export interface Project {
   title: string;
@@ -18,5 +19,13 @@ export const projects: Project[] = [
     preview: "/previews/Water-Ocean.png",
     github: "https://github.com/sujitkumarrdev/RenderLab/tree/main/src/app/Lab/OceanWater",
     component: WaterOcean,
+  },
+  {
+    title: "SpectralCore",
+    slug: "spectral-core",
+    description: "Spectral Core is a noise-driven GLSL sphere with cinematic lighting and rich color gradients.",
+    preview: "/previews/spectral.png",
+    github: "https://github.com/sujitkumarrdev/RenderLab/tree/main/src/app/Lab/SpectralCore",
+    component: SpectralCore,
   },
 ];
