@@ -1,6 +1,7 @@
 import type { ComponentType } from "react";
 import WaterOcean from "../Lab/OceanWater/scene";
 import SpectralCore from "../Lab/SpectralCore/Scene"
+import Particles from "../Lab/ParticleShader/Scene";
 
  export interface Project {
   title: string;
@@ -21,11 +22,19 @@ export const projects: Project[] = [
     component: WaterOcean,
   },
   {
-    title: "SpectralCore",
+    title: "Spectral Core",
     slug: "spectral-core",
     description: "Spectral Core is a noise-driven GLSL sphere with cinematic lighting and rich color gradients.",
     preview: "/previews/spectral.png",
     github: "https://github.com/sujitkumarrdev/RenderLab/tree/main/src/app/Lab/SpectralCore",
     component: SpectralCore,
+  },
+  {
+    title: "Particle Shader",
+    slug: "particle-shader",
+    description: "Interactive 3D morphing particle system with glow, smooth animation, and responsive design.",
+    preview: "/previews/Particles.webp",
+    github: "https://github.com/sujitkumarrdev/RenderLab/tree/main/src/app/Lab/ParticleShader",
+    component: Particles,
   },
 ];

@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect } from "react";
 import Lenis from "lenis";
 import Navbar from "./Components/ui/Navbar";
@@ -9,7 +8,7 @@ import Footer from "./Components/ui/Footer";
 export default function ClientLayoutWrapper({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.2,
+      duration: 0.5,
       wheelMultiplier: 0.5,
     });
 
