@@ -18,7 +18,7 @@ export const projects: Project[] = [
     slug: "water-ocean",
     description: "A realistic water ocean shader rendered in R3F.",
     preview: "/previews/Water-Ocean.png",
-    github: "https://github.com/sujitkumarrdev/RenderLab/tree/main/src/app/Lab/OceanWater",
+    github: "https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/OceanWater",
     component: WaterOcean,
   },
   {
@@ -26,7 +26,7 @@ export const projects: Project[] = [
     slug: "spectral-core",
     description: "Spectral Core is a noise-driven GLSL sphere with cinematic lighting and rich color gradients.",
     preview: "/previews/spectral.png",
-    github: "https://github.com/sujitkumarrdev/RenderLab/tree/main/src/app/Lab/SpectralCore",
+    github: "https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/SpectralCore",
     component: SpectralCore,
   },
   {
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     slug: "particle-shader",
     description: "Interactive 3D morphing particle system with glow, smooth animation, and responsive design.",
     preview: "/previews/Particles.webp",
-    github: "https://github.com/sujitkumarrdev/RenderLab/tree/main/src/app/Lab/ParticleShader",
+    github: "https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/ParticleShader",
     component: Particles,
   },
 ];

@@ -27,7 +27,7 @@ export default function Hero() {
         RenderLab
       </h1>
 
-      <p className="hero-sub mt-6 text-lg md:text-xl text-[#B0B0B0] max-w-2xl leading-relaxed">
+      <p className="hero-sub mt-6 text-lg md:text-xl text-white max-w-2xl leading-relaxed">
         A curated collection of interactive visuals — built with pure GLSL or
         powered by React Three Fiber.
       </p>

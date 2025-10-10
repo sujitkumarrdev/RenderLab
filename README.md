@@ -1,5 +1,5 @@
 # RenderLab – GLSL & React Three Fiber Shader Gallery
-![RenderLab Banner](./public/img/RenderLab.png)  
+![RenderLab Banner](./public/Renderlab_text.png)  
 **Live Demo:** [https://renderlab-iota.vercel.app/](https://renderlab-iota.vercel.app/)
 
 ## Overview
@@ -28,7 +28,7 @@
 
 ## Author
 **Sujit Kumar** – Fullstack WebGL & React Developer  
-- [GitHub](https://github.com/sujitkumarrdev)  
+- [GitHub](https://github.com/sujitkoji)  
 
 ## License
 This repository is for **showcase purposes only**. Commercial or production usage is not allowed.

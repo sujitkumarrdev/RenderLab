@@ -2,8 +2,13 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import gsap from "gsap";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+
   useEffect(() => {
     gsap.fromTo(
       ".nav-logo",
@@ -13,13 +18,24 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="w-full fixed top-0 left-0 z-10 px-4 lg:px-11 py-3 lg:py-4">
-      <Link
+    <nav className="w-full fixed text-[#cacaca] top-0 left-0 z-10 px-4 lg:px-11 py-3 lg:py-4 flex items-center justify-between">
+       <Link
         href="/"
-        className="nav-logo text-[16px] lg:text-xl font-semibold tracking-tight cursor-pointer bg-gradient-to-r from-[#00C3FF] to-[#7A00FF] bg-clip-text text-transparent"
+        className="nav-logo text-[16px] lg:text-xl font-semibold tracking-tight cursor-pointer"
       >
+        <Image
+          width={27}
+          height={27}
+          src="/Cristal_logo.png"
+          alt="Logo"
+          className="inline-block mr-0 h-5 w-5 lg:h-7 lg:w-7"
+        />
         RENDER-LAB
       </Link>
+
+       {isHome && (
+        <div className="w-1 h-1 lg:w-1.5 lg:h-1.5 rounded-full animate-pulse-glow -mr-1.5 lg:-mr-2 cursor-pointer" />
+      )}
     </nav>
   );
 }

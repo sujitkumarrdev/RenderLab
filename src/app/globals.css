@@ -17,6 +17,25 @@ body {
     background-color: #0F0F0F;
 }
 
+@keyframes pulse-glow {
+  0% {
+    background-color: #ff0000;  
+    box-shadow: 0 0 1px #ff0000;
+  }
+  50% {
+    background-color: #00ddff;  
+    box-shadow: 0 0 2px #00ddff;
+  }
+  100% {
+    background-color: #ff0000;
+    box-shadow: 0 0 3px #ff0000;
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
 .hero-title, .hero-sub {
   opacity: 0;
   transform: translateY(20px);
