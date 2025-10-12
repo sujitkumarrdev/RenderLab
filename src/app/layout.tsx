@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: "RenderLab",
     images: [
       {
-        url: "/RenderLab.png",
+        url: "/renderlab-logo.png",
         width: 1200,
         height: 630,
         alt: "RenderLab Shader Gallery",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     title: "RenderLab - GLSL & React Three Fiber Shader Gallery",
     description:
       "Explore interactive GLSL & R3F shaders with live previews and GitHub code.",
-    images: ["/RenderLab.png"],
+    images: ["/renderlab-logo.png"],
   },
 };
 

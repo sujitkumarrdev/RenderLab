@@ -1,7 +1,8 @@
-import type { ComponentType } from "react";
+ import type { ComponentType } from "react";
 import WaterOcean from "../Lab/OceanWater/scene";
 import SpectralCore from "../Lab/SpectralCore/Scene"
 import Particles from "../Lab/ParticleShader/Scene";
+import Galaxy from "../Lab/Galaxy/Scene"
 
  export interface Project {
   title: string;
@@ -13,6 +14,15 @@ import Particles from "../Lab/ParticleShader/Scene";
 }
 
 export const projects: Project[] = [
+  
+  {
+    title: "Galaxy",
+    slug: "galaxy",
+    description: "A cinematic galaxy background with stars, and glowing core, built in R3F.",
+    preview: "/previews/Galaxy.png",
+    github: "https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/Galaxy",
+    component: Galaxy,
+  },
   {
     title: "Water Ocean Shader",
     slug: "water-ocean",
@@ -21,6 +31,7 @@ export const projects: Project[] = [
     github: "https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/OceanWater",
     component: WaterOcean,
   },
+  
   {
     title: "Spectral Core",
     slug: "spectral-core",
@@ -33,7 +44,7 @@ export const projects: Project[] = [
     title: "Particle Shader",
     slug: "particle-shader",
     description: "Interactive 3D morphing particle system with glow, smooth animation, and responsive design.",
-    preview: "/previews/Particles.webp",
+    preview: "/previews/Particles.png",
     github: "https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/ParticleShader",
     component: Particles,
   },
