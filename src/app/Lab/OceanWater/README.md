@@ -1,5 +1,5 @@
 ## Demo
 
-![Galaxy Shader Preview](/previews/Water-Ocean.png)
+![Ocean Water Preview](https://github.com/sujitkoji/RenderLab/blob/main/src/app/Lab/OceanWater/Demo/Water-Ocean.png?raw=true)
 
-Live Demo: [https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/OceanWater](https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/OceanWater)
+Live Demo: (https://labrender.vercel.app/projects/water-ocean)

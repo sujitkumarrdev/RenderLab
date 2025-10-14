@@ -1,5 +1,4 @@
 ## Demo
 
-![Galaxy Shader Preview](/previews/Galaxy.png)
-
-Live Demo: [https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/Galaxy](https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/Galaxy)
+![Galaxy Shader Preview](https://github.com/sujitkoji/RenderLab/blob/main/src/app/Lab/Galaxy/Demo/Galaxy.png?raw=true)  
+**Live Demo:** [https://labrender.vercel.app/projects/galaxy](https://labrender.vercel.app/projects/galaxy)

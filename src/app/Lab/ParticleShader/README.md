@@ -1,5 +1,5 @@
 ## Demo
 
-![Galaxy Shader Preview](/previews/Particles.png)
+![Particles Shader Preview](https://github.com/sujitkoji/RenderLab/blob/main/src/app/Lab/ParticleShader/Demo/Particles.png?raw=true)
 
-Live Demo: [https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/ParticleShader](https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/ParticleShader)
+Live Demo: [https://labrender.vercel.app/projects/particle-shader](https://labrender.vercel.app/projects/particle-shader)

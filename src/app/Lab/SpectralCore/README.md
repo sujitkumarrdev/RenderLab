@@ -1,5 +1,5 @@
 ## Demo
 
-![Galaxy Shader Preview](/previews/spectral.png)
+![Spectral Shader Preview](https://github.com/sujitkoji/RenderLab/blob/main/src/app/Lab/SpectralCore/Demo/spectral.png?raw=true)
 
-Live Demo: [https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/SpectralCore](https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/SpectralCore)
+Live Demo: [https://labrender.vercel.app/projects/spectral-core](https://labrender.vercel.app/projects/spectral-core)

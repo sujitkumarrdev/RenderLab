@@ -3,6 +3,7 @@ import WaterOcean from "../Lab/OceanWater/scene";
 import SpectralCore from "../Lab/SpectralCore/Scene"
 import Particles from "../Lab/ParticleShader/Scene";
 import Galaxy from "../Lab/Galaxy/Scene"
+import SphereParticles from "../Lab/SphereParticles/Scene"
 
  export interface Project {
   title: string;
@@ -41,11 +42,19 @@ export const projects: Project[] = [
     component: SpectralCore,
   },
   {
-    title: "Particle Shader",
+    title: "Particle",
     slug: "particle-shader",
     description: "Interactive 3D morphing particle system with glow, smooth animation, and responsive design.",
     preview: "/previews/Particles.png",
     github: "https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/ParticleShader",
     component: Particles,
+  },
+  {
+    title: "Sphere Particles",
+    slug: "sphere-particles",
+    description: "Interactive 3D sphere particle system with glow, smooth animation, and responsive design.",
+    preview: "/previews/SphereParticles.png",
+    github: "https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/SphereParticles",
+    component: SphereParticles,
   },
 ];
