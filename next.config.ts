@@ -24,6 +24,11 @@ const nextConfig: NextConfig = {
         hostname: "raw.githubusercontent.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "labrender.vercel.app",
+        pathname: "/**",
+      },
     ],
   },
 };

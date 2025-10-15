@@ -4,39 +4,17 @@ import "./globals.css";
 import "./Fonts/WEB/css/melodrama.css";
 import ClientLayoutWrapper from "@/app/ClientLayoutWrapper";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
+const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://labshader.vercel.app"),
-  
+  metadataBase: new URL("https://labrender.vercel.app"),
   title: "RenderLab - GLSL & React Three Fiber Shader Gallery",
   description:
-    "RenderLab is a curated gallery of shaders and interactive visuals, built with GLSL, WebGL, and React Three Fiber. Explore live demos and source code on GitHub.",
-  keywords: [
-    "GLSL Shaders",
-    "React Three Fiber",
-    "WebGL",
-    "Shader Gallery",
-    "3D Visuals",
-    "Creative Coding",
-    "Postprocessing Effects",
-    "Interactive Graphics",
-  ],
-  authors: [{ name: "Sujit Kumar" }],
+    "RenderLab is a curated gallery of shaders built with GLSL, WebGL, and React Three Fiber.",
   openGraph: {
     title: "RenderLab - GLSL & React Three Fiber Shader Gallery",
-    description:
-      "Curated collection of shaders built with GLSL, WebGL, and React Three Fiber. Live previews with open-source code on GitHub.",
-    url: "https://labshader.vercel.app/",
-    siteName: "RenderLab",
+    description: "Explore interactive shaders built with GLSL and R3F.",
     images: [
       {
         url: "/renderlab-logo.png",
@@ -45,14 +23,14 @@ export const metadata: Metadata = {
         alt: "RenderLab Shader Gallery",
       },
     ],
+    siteName: "RenderLab",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "RenderLab - GLSL & React Three Fiber Shader Gallery",
-    description:
-      "Explore interactive GLSL & R3F shaders with live previews and GitHub code.",
+    description: "GLSL + React Three Fiber shader gallery.",
     images: ["/renderlab-logo.png"],
   },
 };

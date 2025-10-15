@@ -1,15 +1,18 @@
-import { notFound } from "next/navigation";
+ import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { projects } from "@/app/Lib/projectData";
 import Back_Code_Buttons from "@/app/Components/ui/Buttons";
 
 interface ProjectPageProps {
-  params: Promise<{ slug: string }>; // 👈 Yeh change karo
+  params: { slug: string };
 }
 
-export async function generateMetadata({ params }: ProjectPageProps) {
-  const { slug } = await params; // 👈 await lagao
-  const project = projects.find((p) => p.slug === slug);
-  if (!project) return { title: "Not Found" };
+ export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata> {
+  const project = projects.find((p) => p.slug === params.slug);
+  if (!project) return { title: "Not Found | RenderLab" };
+
+  const absoluteUrl = `https://labrender.vercel.app/projects/${project.slug}`;
+  const absoluteImage = `https://labrender.vercel.app/${project.preview}`;
 
   return {
     title: `${project.title} | RenderLab`,
@@ -17,18 +20,32 @@ export async function generateMetadata({ params }: ProjectPageProps) {
     openGraph: {
       title: `${project.title} | RenderLab`,
       description: project.description,
-      images: [project.preview],
+      url: absoluteUrl,
+      siteName: "RenderLab",
+      images: [
+        {
+          url: absoluteImage,
+          width: 1200,
+          height: 630,
+          alt: `${project.title} - RenderLab Shader`,
+        },
+      ],
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} | RenderLab`,
+      description: project.description,
+      images: [absoluteImage],
     },
   };
 }
 
-export default async function ProjectPage({ params }: ProjectPageProps) {
-  const { slug } = await params; // 👈 await lagao
-  const project = projects.find((p) => p.slug === slug);
+ export default function ProjectPage({ params }: ProjectPageProps) {
+  const project = projects.find((p) => p.slug === params.slug);
   if (!project) return notFound();
 
   const Component = project.component;
-
   return (
     <main className="relative w-full h-screen flex items-center justify-center bg-black">
       {Component ? (
