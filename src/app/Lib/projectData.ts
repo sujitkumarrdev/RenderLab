@@ -23,10 +23,10 @@ import Atom from "../Lab/Atom/Scene";
     title: "Galaxy",
     slug: "galaxy",
     description:
-      "A cinematic galaxy shader with glowing stars, a luminous nebula core, and smooth color.",
+     "A cinematic galaxy shader with glowing stars, a luminous nebula core, and smooth color.",
     preview: `${BASE_URL}/previews/Galaxy.png`,
     github:
-      "https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/Galaxy",
+     "https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/Galaxy",
     component: Galaxy,
   },
   {

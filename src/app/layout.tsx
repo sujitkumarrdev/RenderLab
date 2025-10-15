@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   title: "RenderLab - GLSL & React Three Fiber Shader Gallery",
   description:
     "RenderLab is a curated gallery of shaders built with GLSL, WebGL, and React Three Fiber.",
+
+  other: {
+    "google-site-verification": "DmHr5O0EiL-50MeWb7EUjAFk_5nVGzYuN06BKqusa7g",
+  },
+
   openGraph: {
     title: "RenderLab - GLSL & React Three Fiber Shader Gallery",
     description: "Explore interactive shaders built with GLSL and R3F.",
@@ -27,6 +32,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "RenderLab - GLSL & React Three Fiber Shader Gallery",
