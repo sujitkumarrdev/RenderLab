@@ -16,7 +16,7 @@ import Atom from "../Lab/Atom/Scene";
   component?: ComponentType;
 }
 
- const BASE_URL = "https://labrender.vercel.app";
+ const BASE_URL = "https://kojilab.vercel.app";
 
  export const projects: Project[] = [
   {
@@ -26,7 +26,7 @@ import Atom from "../Lab/Atom/Scene";
      "A cinematic galaxy shader with glowing stars, a luminous nebula core, and smooth color.",
     preview: `${BASE_URL}/previews/Galaxy.png`,
     github:
-     "https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/Galaxy",
+     "https://github.com/sujitkoji/kojiLab/tree/main/src/app/Lab/Galaxy",
     component: Galaxy,
   },
   {
@@ -36,7 +36,7 @@ import Atom from "../Lab/Atom/Scene";
       "A realistic animated ocean shader with light reflections, depth color blending, and soft waves.",
     preview: `${BASE_URL}/previews/Water-Ocean.png`,
     github:
-      "https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/OceanWater",
+      "https://github.com/sujitkoji/KojiLab/tree/main/src/app/Lab/OceanWater",
     component: WaterOcean,
   },
   {
@@ -46,7 +46,7 @@ import Atom from "../Lab/Atom/Scene";
       "A procedural GLSL shader featuring noise-driven color waves, a glowing energy core & lighting.",
     preview: `${BASE_URL}/previews/spectral.png`,
     github:
-      "https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/SpectralCore",
+      "https://github.com/sujitkoji/KojiLab/tree/main/src/app/Lab/SpectralCore",
     component: SpectralCore,
   },
   {
@@ -56,7 +56,7 @@ import Atom from "../Lab/Atom/Scene";
       "An artistic atom simulation with orbiting electrons, glowing core, and smooth camera motion.",
     preview: `${BASE_URL}/previews/Atom.png`,
     github:
-      "https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/Atom",
+      "https://github.com/sujitkoji/KojiLab/tree/main/src/app/Lab/Atom",
     component: Atom,
   },
   {
@@ -66,7 +66,7 @@ import Atom from "../Lab/Atom/Scene";
       "An interactive morphing particle system with depth, glow, and smooth transitions.",
     preview: `${BASE_URL}/previews/Particles.png`,
     github:
-      "https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/ParticleShader",
+      "https://github.com/sujitkoji/KojiLab/tree/main/src/app/Lab/ParticleShader",
     component: Particles,
   },
   {
@@ -76,7 +76,7 @@ import Atom from "../Lab/Atom/Scene";
       "A dynamic 3D sphere particle shader with motion, orbit animation, and glowing stars.",
     preview: `${BASE_URL}/previews/SphereParticles.png`,
     github:
-      "https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/SphereParticles",
+      "https://github.com/sujitkoji/KojiLab/tree/main/src/app/Lab/SphereParticles",
     component: SphereParticles,
   },
 ];

@@ -8,34 +8,34 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://labrender.vercel.app"),
-  title: "RenderLab - GLSL & React Three Fiber Shader Gallery",
+  metadataBase: new URL("https://kojilab.vercel.app"),
+  title: "KojiLab - GLSL & React Three Fiber Shader Gallery",
   description:
-    "RenderLab is a curated gallery of shaders built with GLSL, WebGL, and React Three Fiber.",
+    "KojiLab is a curated gallery of shaders built with GLSL, WebGL, and React Three Fiber.",
 
   other: {
     "google-site-verification": "DmHr5O0EiL-50MeWb7EUjAFk_5nVGzYuN06BKqusa7g",
   },
 
   openGraph: {
-    title: "RenderLab - GLSL & React Three Fiber Shader Gallery",
+    title: "KojiLab - GLSL & React Three Fiber Shader Gallery",
     description: "Explore interactive shaders built with GLSL and R3F.",
     images: [
       {
         url: "/renderlab-logo.png",
         width: 1200,
         height: 630,
-        alt: "RenderLab Shader Gallery",
+        alt: "KojiLab Shader Gallery",
       },
     ],
-    siteName: "RenderLab",
+    siteName: "KojiLab",
     locale: "en_US",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "RenderLab - GLSL & React Three Fiber Shader Gallery",
+    title: "KojiLab - GLSL & React Three Fiber Shader Gallery",
     description: "GLSL + React Three Fiber shader gallery.",
     images: ["/renderlab-logo.png"],
   },

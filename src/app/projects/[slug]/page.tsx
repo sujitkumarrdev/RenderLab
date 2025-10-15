@@ -13,33 +13,33 @@ interface ProjectPageProps {
   const { slug } = await params;
   const project = projects.find((p) => p.slug === slug);
 
-  if (!project) return { title: "Not Found | RenderLab" };
+  if (!project) return { title: "Not Found | KojiLab" };
 
-  const siteUrl = `https://labrender.vercel.app/projects/${project.slug}`;
+  const siteUrl = `https://kojilab.vercel.app/projects/${project.slug}`;
   const siteImage = project.preview;
 
   return {
-    title: `${project.title} | RenderLab`,
+    title: `${project.title} | KojiLab`,
     description: project.description,
-    metadataBase: new URL("https://labrender.vercel.app"),
+    metadataBase: new URL("https://kojilab.vercel.app"),
     openGraph: {
-      title: `${project.title} | RenderLab`,
+      title: `${project.title} | KojiLab`,
       description: project.description,
       url: siteUrl,
-      siteName: "RenderLab",
+      siteName: "KojiLab",
       type: "article",
       images: [
         {
           url: siteImage,
           width: 1200,
           height: 630,
-          alt: `${project.title} - RenderLab Shader`,
+          alt: `${project.title} - KojiLab Shader`,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${project.title} | RenderLab`,
+      title: `${project.title} | KojiLab`,
       description: project.description,
       images: [siteImage],
     },
