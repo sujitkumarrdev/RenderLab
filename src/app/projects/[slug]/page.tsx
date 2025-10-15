@@ -1,14 +1,15 @@
- import { notFound } from "next/navigation";
+import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { projects } from "@/app/Lib/projectData";
 import Back_Code_Buttons from "@/app/Components/ui/Buttons";
 
 interface ProjectPageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;  
 }
 
- export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata> {
-  const project = projects.find((p) => p.slug === params.slug);
+export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata> {
+  const { slug } = await params; // 👈 await  
+  const project = projects.find((p) => p.slug === slug);
   if (!project) return { title: "Not Found | RenderLab" };
 
   const absoluteUrl = `https://labrender.vercel.app/projects/${project.slug}`;
@@ -41,8 +42,9 @@ interface ProjectPageProps {
   };
 }
 
- export default function ProjectPage({ params }: ProjectPageProps) {
-  const project = projects.find((p) => p.slug === params.slug);
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { slug } = await params; // 👈 await  
+  const project = projects.find((p) => p.slug === slug);
   if (!project) return notFound();
 
   const Component = project.component;
