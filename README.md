@@ -1,6 +1,6 @@
 # RenderLab – GLSL & React Three Fiber Shader Gallery
 ![RenderLab Banner](./public/Renderlab_text.png)  
-**Live Demo:** [https://renderlab-iota.vercel.app/](https://renderlab-iota.vercel.app/)
+**Live Demo:** [https://kojilab.vercel.app/](https://kojilab.vercel.app/)
 
 ## Overview
 **RenderLab** is a premium gallery of shaders and interactive visuals built with **GLSL**, **WebGL**, and **React Three Fiber**. It showcases creative coding experiments like water shaders, raymarching effects, and procedural visuals – all running live in the browser. This is a **demo-only project**, made for exploring shaders online (not for local setup).
@@ -24,7 +24,7 @@
 ## Notes
 - Repository is **for demo & learning only**  
 - Not intended for reuse in production projects  
-- Full live experience: [RenderLab Demo](https://renderlab-iota.vercel.app/)  
+- Full live experience: [KojiLab Demo](https://kojilab.vercel.app/)  
 
 ## Author
 **Sujit Kumar** – Fullstack WebGL & React Developer  

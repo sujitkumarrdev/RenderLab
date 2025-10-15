@@ -26,7 +26,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "labrender.vercel.app",
+        hostname: "kojilab.vercel.app",
         pathname: "/**",
       },
     ],

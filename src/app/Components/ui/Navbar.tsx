@@ -30,7 +30,7 @@ export default function Navbar() {
           alt="Logo"
           className="inline-block mr-0 h-5 w-5 lg:h-7 lg:w-7"
         />
-        KOJI-LAB
+        KOJILAB
       </Link>
 
        {isHome && (
