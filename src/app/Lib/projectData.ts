@@ -4,6 +4,7 @@ import SpectralCore from "../Lab/SpectralCore/Scene"
 import Particles from "../Lab/ParticleShader/Scene";
 import Galaxy from "../Lab/Galaxy/Scene"
 import SphereParticles from "../Lab/SphereParticles/Scene"
+import Atom from "../Lab/Atom/Scene"
 
  export interface Project {
   title: string;
@@ -40,6 +41,14 @@ export const projects: Project[] = [
     preview: "/previews/spectral.png",
     github: "https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/SpectralCore",
     component: SpectralCore,
+  },
+  {
+    title: "Atom",
+    slug: "atom",
+    description: "Noise-driven GLSL sphere with dynamic electron orbits, cinematic lighting, and vibrant color.",
+    preview: "/previews/Atom.png",
+    github: "https://github.com/sujitkoji/RenderLab/tree/main/src/app/Lab/Atom",
+    component: Atom,
   },
   {
     title: "Particle",
