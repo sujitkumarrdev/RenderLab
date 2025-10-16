@@ -1,41 +1,39 @@
+// src/app/sitemap.xml/route.ts
 import { projects } from "@/app/Lib/projectData";
-
-// Optional: remove edge runtime if causing issues
-// export const runtime = "edge";
 
 export async function GET() {
   const BASE_URL = "https://kojilab.vercel.app";
 
   const urls = [
     {
-      url: `${BASE_URL}/`,
-      lastModified: new Date().toISOString(),
-      changeFrequency: "weekly",
+      loc: `${BASE_URL}/`,
+      lastmod: new Date().toISOString(),
+      changefreq: "weekly",
       priority: 1.0,
     },
     ...projects.map((p) => ({
-      url: `${BASE_URL}/projects/${p.slug}`,
-      lastModified: new Date().toISOString(),
-      changeFrequency: "weekly",
+      loc: `${BASE_URL}/projects/${p.slug}`,
+      lastmod: new Date().toISOString(),
+      changefreq: "weekly",
       priority: 0.8,
     })),
-  ];  
+  ];
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls
   .map(
-    (u) => `  <url>
-    <loc>${u.url}</loc>
-    <lastmod>${u.lastModified}</lastmod>
-    <changefreq>${u.changeFrequency}</changefreq>
-    <priority>${u.priority}</priority>
-  </url>`
+    (u) => `<url>
+  <loc>${u.loc}</loc>
+  <lastmod>${u.lastmod}</lastmod>
+  <changefreq>${u.changefreq}</changefreq>
+  <priority>${u.priority}</priority>
+</url>`
   )
   .join("\n")}
 </urlset>`;
 
-  return new Response(xml.trim(), {
+  return new Response(xml, {
     status: 200,
     headers: {
       "Content-Type": "application/xml",
@@ -43,5 +41,3 @@ ${urls
     },
   });
 }
-
-

@@ -7,7 +7,7 @@ export default function HomePage() {
   const siteTitle = "KojiLab - GLSL & React Three Fiber Shader Gallery";
   const siteDescription = "Explore interactive shaders built with GLSL and R3F.";
   const siteUrl = "https://kojilab.vercel.app/";
-  const siteImage = "https://kojilab.vercel.app/renderlab-logo.png";
+  const siteImage = "https://kojilab.vercel.app/kojilab-logo.png";
   const fbAppId = "YOUR_FACEBOOK_APP_ID"; 
 
   return (
