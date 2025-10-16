@@ -28,7 +28,7 @@ export default function Footer() {
 
                 <div className="flex justify-center order-last md:order-none">
                     <p className="text-sm md:text-base text-center">
-                        © 2025 SUJITKOJI. All rights reserved.
+                        © 2025 KOJILAB. All rights reserved.
                     </p>
                 </div>
 

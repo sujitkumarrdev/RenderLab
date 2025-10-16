@@ -1,5 +1,5 @@
 # RenderLab – GLSL & React Three Fiber Shader Gallery
-![RenderLab Banner](./public/Renderlab_text.png)  
+![RenderLab Banner](./public/kojilab_text.png)  
 **Live Demo:** [https://kojilab.vercel.app/](https://kojilab.vercel.app/)
 
 ## Overview

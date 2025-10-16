@@ -13,16 +13,12 @@ export const metadata: Metadata = {
   description:
     "KojiLab is a curated gallery of shaders built with GLSL, WebGL, and React Three Fiber.",
 
-  other: {
-    "google-site-verification": "DmHr5O0EiL-50MeWb7EUjAFk_5nVGzYuN06BKqusa7g",
-  },
-
   openGraph: {
     title: "KojiLab - GLSL & React Three Fiber Shader Gallery",
     description: "Explore interactive shaders built with GLSL and R3F.",
     images: [
       {
-        url: "/renderlab-logo.png",
+        url: "/kojilab-logo.png",
         width: 1200,
         height: 630,
         alt: "KojiLab Shader Gallery",
@@ -37,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "KojiLab - GLSL & React Three Fiber Shader Gallery",
     description: "GLSL + React Three Fiber shader gallery.",
-    images: ["/renderlab-logo.png"],
+    images: ["/kojilab-logo.png"],
   },
 };
 
