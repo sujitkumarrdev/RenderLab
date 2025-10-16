@@ -1,33 +1,23 @@
 import { MetadataRoute } from "next";
+import { projects } from "@/app/Lib/projectData";
+
+const BASE_URL = "https://kojilab.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://kojilab.vercel.app";
-
   return [
+    // Homepage
     {
-      url: baseUrl,
+      url: BASE_URL,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1,
+      changeFrequency: "weekly" as const,  
+      priority: 1.0,
     },
-    {
-      url: `${baseUrl}/projects`,
+    // Projects
+    ...projects.map((project) => ({
+      url: `${BASE_URL}/projects/${project.slug}`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/about`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    // projects.json ke har shader ke liye link auto add karna chaho to:
-    // projects.map((p) => ({
-    //   url: `${baseUrl}/projects/${p.slug}`,
-    //   lastModified: new Date(),
-    //   changeFrequency: "monthly",
-    //   priority: 0.8,
-    // }))
+      changeFrequency: "weekly" as const,  
+      priority: 0.8,
+    })),
   ];
 }
