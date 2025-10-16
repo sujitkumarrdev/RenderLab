@@ -11,29 +11,47 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://kojilab.vercel.app"),
   title: "KojiLab - GLSL & React Three Fiber Shader Gallery",
   description:
-    "KojiLab is a curated gallery of shaders built with GLSL, WebGL, and React Three Fiber.",
-
+    "KojiLab is a curated gallery of world-class shaders built with GLSL, WebGL, and React Three Fiber.",
+  keywords: [
+    "GLSL",
+    "React Three Fiber",
+    "WebGL",
+    "Shader Gallery",
+    "Three.js",
+    "3D Shader",
+    "Procedural Graphics",
+  ],
+  authors: [{ name: "Sujit Koji", url: "https://kojilab.vercel.app" }],
+  creator: "Sujit Koji",
+  publisher: "KojiLab",
+  alternates: {
+    canonical: "https://kojilab.vercel.app",
+  },
+  other: {
+    "google-site-verification": "DmHr5O0EiL-50MeWb7EUjAFk_5nVGzYuN06BKqusa7g",
+  },
   openGraph: {
     title: "KojiLab - GLSL & React Three Fiber Shader Gallery",
-    description: "Explore interactive shaders built with GLSL and R3F.",
+    description: "Explore cinematic shaders built with GLSL and React Three Fiber.",
+    url: "https://kojilab.vercel.app",
+    siteName: "KojiLab",
+    type: "website",
+    locale: "en_US",
     images: [
       {
-        url: "/kojilab-logo.png",
+        url: "https://kojilab.vercel.app/kojilab-logo.png",
         width: 1200,
         height: 630,
         alt: "KojiLab Shader Gallery",
       },
     ],
-    siteName: "KojiLab",
-    locale: "en_US",
-    type: "website",
   },
-
   twitter: {
     card: "summary_large_image",
     title: "KojiLab - GLSL & React Three Fiber Shader Gallery",
-    description: "GLSL + React Three Fiber shader gallery.",
-    images: ["/kojilab-logo.png"],
+    description: "A curated shader gallery using GLSL, WebGL, and React Three Fiber.",
+    images: ["https://kojilab.vercel.app/kojilab-logo.png"],
+    creator: "@sujitkoji",
   },
 };
 
