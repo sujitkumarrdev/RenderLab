@@ -1,16 +1,29 @@
+// app/sitemap.xml.ts
 import { projects } from "@/app/Lib/projectData";
 
-export const runtime = "edge"; // Optional, faster edge function
+export const runtime = "edge";  
 
 export async function GET() {
   const BASE_URL = "https://kojilab.vercel.app";
 
-  const urls = [
-    { url: `${BASE_URL}/`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 1.0 },
+  type SitemapUrl = {
+    url: string;
+    lastModified: string;
+    changeFrequency: "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never";
+    priority: number;
+  };
+
+  const urls: SitemapUrl[] = [
+    {
+      url: `${BASE_URL}/`,
+      lastModified: new Date().toISOString(),
+      changeFrequency: "weekly",
+      priority: 1.0,
+    },
     ...projects.map((p) => ({
       url: `${BASE_URL}/projects/${p.slug}`,
       lastModified: new Date().toISOString(),
-      changeFrequency: "weekly",
+      changeFrequency: "weekly" as const, // ✅ type assertion for TS
       priority: 0.8,
     })),
   ];
