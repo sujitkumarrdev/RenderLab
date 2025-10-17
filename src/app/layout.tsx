@@ -24,27 +24,25 @@ export const metadata: Metadata = {
   authors: [{ name: "SujitKoji", url: "https://kojilab.vercel.app" }],
   creator: "SujitKoji",
   publisher: "KojiLab",
-  alternates: {
-    canonical: "https://kojilab.vercel.app",
-  },
+  alternates: { canonical: "https://kojilab.vercel.app" },
   other: {
     "google-site-verification": "DmHr5O0EiL-50MeWb7EUjAFk_5nVGzYuN06BKqusa7g",
   },
 
-  //  Add favicon
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/web-app-manifest-192x192.png", sizes: "192x192", type: "image/png" },
-      { url: "/web-app-manifest-512x512.png", sizes: "512x512", type: "image/png" },
-      { url: "/apple-touch-icon.png", sizes: "180x180", rel: "apple-touch-icon" },
+      { url: "/logo/favicon.ico", sizes: "any" },
+      { url: "/logo/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/logo/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/logo/web-app-manifest-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/logo/web-app-manifest-512x512.png", sizes: "512x512", type: "image/png" },
+      { url: "/logo/apple-touch-icon.png", sizes: "180x180", rel: "apple-touch-icon" },
     ],
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    shortcut: "/logo/favicon.ico",
+    apple: "/logo/apple-touch-icon.png",
   },
-  manifest: "/site.webmanifest",
+
+  manifest: "/logo/manifest.json",
 
   openGraph: {
     title: "KojiLab - Premium GLSL Shader Gallery",
