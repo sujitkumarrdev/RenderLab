@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "KOJILAB - GLSL Shader Gallery",
+  "short_name": "Kojilab",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
