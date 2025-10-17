@@ -9,7 +9,7 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://kojilab.vercel.app"),
-  title: "KojiLab - GLSL & React Three Fiber Shader Gallery",
+  title: "KojiLab - Premium GLSL Shader Gallery",
   description:
     "KojiLab is a curated gallery of world-class shaders built with GLSL, WebGL, and React Three Fiber.",
   keywords: [
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     "3D Shader",
     "Procedural Graphics",
   ],
-  authors: [{ name: "Sujit Koji", url: "https://kojilab.vercel.app" }],
-  creator: "Sujit Koji",
+  authors: [{ name: "SujitKoji", url: "https://kojilab.vercel.app" }],
+  creator: "SujitKoji",
   publisher: "KojiLab",
   alternates: {
     canonical: "https://kojilab.vercel.app",
@@ -30,8 +30,24 @@ export const metadata: Metadata = {
   other: {
     "google-site-verification": "DmHr5O0EiL-50MeWb7EUjAFk_5nVGzYuN06BKqusa7g",
   },
+
+  //  Add favicon
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/web-app-manifest-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/web-app-manifest-512x512.png", sizes: "512x512", type: "image/png" },
+      { url: "/apple-touch-icon.png", sizes: "180x180", rel: "apple-touch-icon" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: "/site.webmanifest",
+
   openGraph: {
-    title: "KojiLab - GLSL & React Three Fiber Shader Gallery",
+    title: "KojiLab - Premium GLSL Shader Gallery",
     description: "Explore cinematic shaders built with GLSL and React Three Fiber.",
     url: "https://kojilab.vercel.app",
     siteName: "KojiLab",
@@ -48,12 +64,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "KojiLab - GLSL & React Three Fiber Shader Gallery",
+    title: "KojiLab - Premium GLSL Shader Gallery",
     description: "A curated shader gallery using GLSL, WebGL, and React Three Fiber.",
     images: ["https://kojilab.vercel.app/kojilab-logo.png"],
     creator: "@sujitkoji",
   },
 };
+
+export const viewport = {
+  themeColor: "#ffffff",
+};
+
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

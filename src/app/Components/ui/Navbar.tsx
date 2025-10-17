@@ -24,17 +24,17 @@ export default function Navbar() {
         className="nav-logo text-[16px] lg:text-xl font-semibold tracking-tight cursor-pointer"
       >
         <Image
-          width={27}
-          height={27}
-          src="/Cristal_logo.png"
+          width={28}
+          height={28}
+          src="/Crystal_PNG.png"
           alt="Logo"
-          className="inline-block mr-0 h-5 w-5 lg:h-7 lg:w-7"
+          className="inline-block mr-0 h-6 w-6 lg:h-7.5 lg:w-7.5 mb-1 lg:mb-1.5"
         />
         KOJILAB
       </Link>
-
+                        {/* point */}
        {isHome && (
-        <div className="w-1 h-1 lg:w-1.5 lg:h-1.5 rounded-full animate-pulse-glow -mr-1.5 lg:-mr-2 cursor-pointer" />
+        <div className="w-1 h-1 lg:w-1.5 lg:h-1.5 rounded-full animate-pulse-glow -mr-1 lg:-mr-2 cursor-pointer" />
       )}
     </nav>
   );
