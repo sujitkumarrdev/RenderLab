@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { projects } from "@/app/Lib/projectData";
-import Back_Code_Buttons from "@/app/Components/ui/Buttons";
+import Back_Code_Buttons from "@/app/Components/card/Buttons";
 import type { Metadata } from "next";
 import type { ComponentType } from "react";
 import Head from "next/head";

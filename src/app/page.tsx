@@ -1,6 +1,6 @@
 // app/page.tsx
 import Hero from "./Components/ui/Hero";
-import ProjectGrid from "./Components/ProjectGrid";
+import ProjectGrid from "./Components/card/ProjectGrid";
 import Head from "next/head";
 
 export default function HomePage() {

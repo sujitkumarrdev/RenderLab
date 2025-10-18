@@ -22,14 +22,17 @@ export default function ClientLayoutWrapper({ children }: { children: React.Reac
     requestAnimationFrame(raf);
   }, []);
 
+  const isProjectPage = pathname.includes("/src/app/projects/[slug]/page.tsx");
+
   return (
     <>
-      <Navbar />
+      {!isProjectPage &&<Navbar/>}
       <div id="smooth-wrapper">
         <div id="smooth-content">{children}</div>
       </div>
 
-       {pathname === "/" && <Footer />}
+      {!isProjectPage &&<Footer/>}
+       
     </>
   );
 }

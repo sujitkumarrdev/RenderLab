@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://kojilab.vercel.app/kojilab-logo.png",
+        url: "https://kojilab.vercel.app/kojilab-img.png",
         width: 1200,
         height: 630,
         alt: "KojiLab Shader Gallery",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "KojiLab - Premium GLSL Shader Gallery",
     description: "A curated shader gallery using GLSL, WebGL, and React Three Fiber.",
-    images: ["https://kojilab.vercel.app/kojilab-logo.png"],
+    images: ["https://kojilab.vercel.app/kojilab-img.png"],
     creator: "@sujitkoji",
   },
 };
