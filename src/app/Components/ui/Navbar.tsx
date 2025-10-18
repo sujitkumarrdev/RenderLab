@@ -52,7 +52,7 @@ export default function Navbar() {
             </nav>
 
             {/* Right side indicator */}
-            <div className="w-1 h-1 lg:w-1.5 lg:h-1.5 rounded-full animate-pulse-glow -mr-1 lg:-mr-2 cursor-pointer" />
+            <div className="w-1 h-1 lg:w-1.5 lg:h-1.5 rounded-full animate-pulse-glow -mr-3 lg:-mr-2 cursor-pointer" />
 
             {/* Mobile Hamburger Menu */}
             <div className="md:hidden absolute right-4 top-3">
